@@ -51,14 +51,14 @@ fun String.smartTruncate(length: Int): String {
     }
     return builder.toString()
 }
-
-fun List<DatabaseVideo>.asDomainModel(): List<Video> {
-    return map {
-        Video (
-                url = it.url,
-                title = it.title,
-                description = it.description,
-                updated = it.updated,
-                thumbnail = it.thumbnail)
-    }
-}
+//
+//fun List<DatabaseVideo>.asDomainModel(): List<Video> {
+//    return map {
+//        Video (
+//                url = it.url,
+//                title = it.title,
+//                description = it.description,
+//                updated = it.updated,
+//                thumbnail = it.thumbnail)
+//    }
+//}
